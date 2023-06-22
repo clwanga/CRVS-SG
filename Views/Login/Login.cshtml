@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Login | CRVS Stakeholders Gateway";
+    Layout = "_Login";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="~/remote_wwwroot/images/crvs-image.png" />
+@*    @Html.Partial("_Cssheader")*@
+    <partial name="_Cssheader" />
+</head>
+<body>
+    <main class="flex h-screen items-center justify-center bg-slate-100">
+        <div class="flex h-full w-full items-center justify-center">
+            <div class="w-full space-y-8 lg:w-[60%]">
+                <div class="flex w-full items-center justify-center">
+                    <img src="~/remote_wwwroot/images/crvs-image.png" class="h-36" />
+                </div>
+                <h1 class="mt-4 flex items-center justify-center font-bold md:text-xl">
+                    CIVIL REGISTRATION AND VITAL STATISTICS
+                </h1>
+                <h2 class="mt-4 flex items-center justify-center font-bold md:text-xl">
+                    STAKEHOLDERS GATEWAY
+                </h2>
+
+                <div class="flex w-full items-center justify-center px-2">
+                    <div class="w-full sm:w-[70%]">
+                        <div class="w-full rounded-sm py-8">
+                            <form class="flex w-full flex-col items-center space-y-8 xl:px-32" id="target">
+                                <label class="block w-full">
+                                    <span class="block text-base font-medium uppercase">username</span>
+                                    <input type="text" id="uname"
+                                           class="uname mt-1 h-12 w-full rounded-md border border-slate-300 px-4 focus:outline-crvsblue-700"
+                                           placeholder="Username" />
+                                </label>
+
+
+                                <label class="block w-full">
+                                    <span class="block text-base font-medium uppercase">password</span>
+                                    <div class="relative flex items-center">
+                                        <input id="inputPassword"
+                                               type="password"
+                                               class="mt-1 h-12 w-full rounded-md border border-slate-300 px-4 focus:outline-crvsblue-700 inputPassword"
+                                               placeholder="Password" />
+                                        <button id="svgIcon"
+                                                class="absolute right-5"
+                                                type="button"
+                                                onclick="showPassword()"></button>
+                                    </div>
+
+                                </label>
+
+                                <button id="btnlogin"
+                                        class="btnlogin w-full rounded-sm border border-crvsblue-700 bg-crvsblue-700 p-2 text-center font-bold uppercase text-white hover:bg-transparent hover:text-crvsblue-700">
+                                    login
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+<partial name="_LoginScripts"/>

@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Times New Roman";
+  src: url("../assets/fonts/times_new_roman.ttf");
+}
+
+@font-face {
+  font-family: "Times New Roman Bold";
+  src: url("../assets/fonts/times_new_roman_bold.ttf");
+}
+
+.dx-icon-trash {
+  @apply text-red-600  !important;
+}
+
+.dx-icon-save {
+  @apply text-green-600  !important;
+}
+
+.dx-icon-revert {
+  @apply text-red-600  !important;
+}
+
+.required:after {
+  content: "*";
+  color: red;
+}
+
+.stepper-active .stepper-head-text {
+  @apply font-bold;
+}
+
+.stepper-active {
+  @apply border-b-4 border-crvsblue-800;
+}
+
+.stepper-head {
+  @apply hover:bg-sky-100;
+}
+
+.heightstepper {
+  @apply min-h-screen !important;
+}
+
+.view {
+  @apply text-crvsblue-800;
+}
+
+.pay {
+  @apply text-green-800;
+}
+.verticaltext {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.tablehead{
+  @apply border border-black px-2 py-1 align-text-top font-normal font-times !important;
+}
+
+.tabledata{
+  @apply verticaltext absolute bottom-0 left-2 flex -rotate-180 justify-start pt-2 uppercase py-2 !important;
+}
+
+.dx-datagrid-text-content{
+  @apply font-semibold font-robot text-black; 
+}
+
+.birthform{
+  print-color-adjust: inherit;
+}
